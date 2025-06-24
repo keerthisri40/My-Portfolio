@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEERTHISRI KUNTAM Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg,  cornflowerblue 0%, rebeccapurple 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+        }
+
+        .nav {
+            background: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+        }
+
+        .nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: black;
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .about-text {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1em;
+        }
+
+        .education, .hackathon {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        .education h3, .hackathon h3 {
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .education .institution, .hackathon .event {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .education .date, .hackathon .date {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .project h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .project-demo {
+            background: #667eea;
+            color: white;
+            padding: 40px 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+
+        .btn {
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: #5a6fd8;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .skills {
+                justify-content: center;
+            }
+            
+            .skill {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Keerthisri Kuntam</h1>
+        <p>Aspiring MERN Developer & ML Enthusiast</p>
+    </div>
+
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#hackathons">Hackathons & Competitions</a>
+        <a href="#contact">Contact</a>
+    </div>
+     <div class="container">
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <div class="about-text">
+                <p>Hello! I’m a passionate MERN developer and AI & Data Science student. I enjoy building dynamic web applications with Express, 
+                    React, and Node — while focusing primarily on the front-end and data-driven features. 
+                    I also love exploring machine learning and data science - analyzing datasets, 
+                    creating intelligent solutions, and continually advancing my skills in tech field.</p>
+            </div>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Python</div>
+            </div>
+        </div>
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Bachelor of Engineering in Artificial Intelligence and Data Science</h3>
+                <div class="institution">SRKR Engineering College, Bhimavaram</div>
+                <div class="date">2023 – Present</div>
+                <p>Currently pursuing my degree focused on AI, machine learning, and data science.</p>
+            </div>
+        </div>
+
+        <div class="section" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Age Calculator</h3>
+                    <div class="project-demo">Project Demo</div>
+                    <p>A simple web tool using HTML, CSS & JavaScript to instantly calculate a user's age in years, months, and days based on their date of birth.</p>
+                    <br>
+                    <ul>
+                    <li><a href="https://github.com/keerthisri40/INTERNPROJECT/blob/main/AGEC.html" target="_blank">AGEC.html</a></li>
+                    <li><a href="https://github.com/keerthisri40/INTERNPROJECT/blob/main/AGEC.css" target="_blank">AGEC.css</a></li>
+                    <li><a href="https://github.com/keerthisri40/INTERNPROJECT/blob/main/AGEC.js" target="_blank">AGEC.js</a></li>
+                   </ul>
+                </div>
+                <div class="project">
+                    <h3>Rock Paper Sciccors</h3>
+                    <div class="project-demo">App Demo</div>
+                    <p>An interactive browser game built with vanilla JavaScript. Choose rock, paper, 
+                        or scissors to play against a computer’s random choice, with results and scores updated live..</p>
+                    <ul>
+                    <li><a href="https://github.com/keerthisri40/INTERNPROJECT/blob/main/RPS.html" target="_blank">RPS.html</a></li>
+                    <li><a href="https://github.com/keerthisri40/INTERNPROJECT/blob/main/RPS.css" target="_blank">RPS.css</a></li>
+                    <li><a href="https://github.com/keerthisri40/INTERNPROJECT/blob/main/RPS.js" target="_blank">RPS.js</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="hackathons">
+            <h2>Hackathons & Competitions</h2>
+            <div class="hackathon">
+                <h3>Participant - 2K24 Hackathon</h3>
+                <div class="event"> 24-Hour Vedic vision 2k24 Hackathon</div>
+                <div class="date">september 2024</div>
+                <img src="hackathon.jpg" alt="Hackathon Certificate" style="max-width:100%; height:auto; border-radius:8px; margin-top:10px;">
+                <p>Certificate of Participation from S.R.K.R. Engineering College, awarded to Keerthisri, a 2nd-year B.Tech student, 
+                    for participating in the 24‑Hour Vedic Vision – 2K24 Hackathon, 
+                    which included a 12‑day bootcamp from August 2–15, 2024.</p>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Email:</strong> keerthisri66444@gmail.com</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/keerthisri40" target="_blank">github.com/keerthisri40</a></p>
+               <p><strong>linkedin:</strong> <a href="https://www.linkedin.com/in/keerthisri-kuntam-28ba012b9" target="_blank" rel="noopener noreferrer">linkedin.com/in/keerthisri-kuntam-28ba012b9</a>
+                <p><strong>Phone:</strong> +91 8341161719</p>
+                <p><strong>Location:</strong> SRKR Engineering College, Bhimavaram, AndharPradesh, India</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Keerthisri Kuntam. Built with HTML, CSS & JavaScript.</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert('Thank you for your message! I will get back to you soon.');
+                this.reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
+
